@@ -1,14 +1,18 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
-import { Router, browserHistory } from 'react-router';
-import routes from './routes';
+import {BrowserRouter} from 'react-router-dom';
+import App from './components/app';
 
 require('./stylesheets/base.scss');
 require('./stylesheets/home.scss');
-require('./stylesheets/contact.scss');
+require('./stylesheets/about.scss');
+require('./stylesheets/work.scss');
+
 
 ReactDom.render(
-  <Router history={browserHistory} routes={routes} />,
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
   document.querySelector('#app')
 );
