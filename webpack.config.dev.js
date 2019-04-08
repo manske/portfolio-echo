@@ -46,13 +46,6 @@ module.exports = {
         use: 'html-loader?attrs[]=video:src'
       },
       {
-        test: /\.(jpg|png|svg)$/, 
-        loader: 'url-loader',
-        options: {
-          limit: 25000,
-        },
-      },
-      {
         test: /\.(jpg|png|svg)$/,
         loader: 'file-loader',
         options: {
@@ -78,6 +71,11 @@ module.exports = {
     extensions: ['.js', '.jsx'],
   },
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+          'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+      }
+    }),
     new webpack.HotModuleReplacementPlugin(),
     new CopyWebpackPlugin([
             {from:'src/assets/images',to:'public/images'},

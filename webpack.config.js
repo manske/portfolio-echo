@@ -1,3 +1,4 @@
+
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 var webpack = require('webpack');
@@ -11,8 +12,13 @@ module.exports = {
     publicPath: '/public/'
   },
   node: { 
-    fs: 'empty',
-    process: true }, 
+    global: true,
+    crypto: 'empty',
+    process: true,
+    module: false,
+    clearImmediate: false,
+    setImmediate: false,
+    fs: 'empty' }, 
   module: {
     loaders: [
       {
@@ -80,14 +86,17 @@ module.exports = {
     extensions: ['.js', '.jsx'],
   },
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+          'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+      }
+    }),
     new ExtractTextPlugin({ filename: 'app.css', allChunks: true }),
     new CopyWebpackPlugin([
            {from:'src/assets/images',to:'images'},
            {from:'src/assets/models',to:'models'} 
         ]), 
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('development')
-    })
+   
   ],
 
   devServer: {
