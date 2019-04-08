@@ -24,7 +24,7 @@ export default class Home extends Component {
           </p>
           <ChunkyIndent>
             <p className="smalls">UX/UI Designer &amp; Developer</p>
-            <p className="larges">I build digital products and interfaces that spark joy. </p>
+            <p className="larges">I build digital products and interfaces. </p>
           </ChunkyIndent>
 
           <div className="chunky__block">

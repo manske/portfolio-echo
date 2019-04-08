@@ -51,7 +51,8 @@ export default class Work extends Component {
                 <div className="col-md-7">
                   <h3>Clipping Magic is an online background removal app. </h3> 
                   <hr className="tick"/>
-                  <p>It’s faster and more intuitive to use than Photoshop which makes it a popular choice for many e-commerce businesses. Recently it has encountered more competition from other online providers and needed a redesign that would help reflect and keep its dominate position in the market. This is the website portion of the redesign. My role was as designer and UI developer. I designed the changes, then implemented them.</p>  
+                  <p>It’s faster and more intuitive to use than Photoshop which makes it a popular choice for many e-commerce businesses. Recently it has encountered more competition from other online providers and needed a redesign that would help reflect and keep its dominate position in the market. This is the website portion of the redesign. </p>  
+                  <p>My role was as designer and UI developer. I designed the changes, then implemented them. Check out the live site design <a href="https://clippingmagic.com" target="_blank">here</a>. </p>
                 </div>
               </div>
             
@@ -98,8 +99,9 @@ export default class Work extends Component {
           <div className="container_bg">
             <ChunkyIndent>
               <div className="row">
-                <div className="col-md-12">
+                <div className="col-md-7">
                   <h2>Customer Funnel</h2>
+                  <p>Clipping Magic gets the majority of new customers from being a top search result. As a part of the design, I wanted to focus on how the user experience through our primary customer funnel could be improved. This would help potential customers deciding whether or not to choose our tool and hopefully improve our bottom line. </p>
                 </div>
               </div>
 
@@ -110,7 +112,7 @@ export default class Work extends Component {
                     <li>Google searches "how to remove image background" or other relevant keywords</li>
                     <li>Lands on our site</li>
                     <li>Uploads and image </li>
-                    <li>Tries our product </li>
+                    <li>Tries our background removal tool </li>
                     <li>Wants to download and is asked to subscribe</li>
                     <li>Creates an account</li>
                     <li>Purchases a subscription</li>
@@ -131,10 +133,10 @@ export default class Work extends Component {
                 <h2>User Testing</h2>
               </div>
             </div>
-            <div className="row">
+            <div className="row  some__margin">
               <div className="col-md-7">
                 <p>I set up a sequenced based user test that would guide users from steps 2-5 since those were ones that could be tested on and directly affected by this design.</p>
-                <p>From the tests I saw a common problem, it would take users a decent while to understand how it worked. Once they grasped it they commented on how easy and fast it was, but would take them a little while to get there.</p>
+                <p>From the tests I saw a common problem, it would take users a decent while to understand how the background removal paradigm works. Once they grasped it they commented on how easy and fast it was, but would take them a little while to get there.</p>
                 <p>Since there are a multitude of tools to choose from from a Google search, I wanted to make sure users understood how our tool worked so they would quickly see how easy and well it work compared to the others and not get turned away from unnecessary frustration.  </p>
               </div>
               <div className="col-md-5 col-lg-4 offset-lg-1">

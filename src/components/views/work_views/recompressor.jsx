@@ -36,6 +36,7 @@ export default class Recompressor extends Component {
                   <h3>Recompressor compresses images really well. </h3> 
                   <hr className="tick"/>
                   <p>Primarily a content marketing site, its purpose is to have people use it and discover our main image processing products through it. I wanted to keep the design of the tool itself very clean and simple, but catch people's attention through well crafted micro-interactions. My role was as the designer, but I would mockup elements of the UI in CodePen to be referenced by the developer. </p>  
+                  <p>My role was as the designer, but I would mockup elements of the UI in CodePen to be referenced by the developer. Check out the live site design <a href="https://recompressor.com" target="_blank">here</a>.</p>
                 </div>
               </div>
               <div className="row">

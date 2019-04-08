@@ -44,7 +44,9 @@ export default class Work extends Component {
                 <div className="col-md-7">
                   <h3>Clipping Magic is an online background removal app. </h3> 
                   <hr className="tick"/>
-                  <p>It’s faster and more intuitive to use than Photoshop which makes it a popular choice for many e-commerce businesses. Recently it has encountered more competition from other online providers and needed a redesign that would help reflect and keep its dominate position in the market. This is the webapp portion of the redesign. My role was as designer and UI developer. I designed the changes, then implemented them.</p>  
+                  <p>It’s faster and more intuitive to use than Photoshop which makes it a popular choice for many e-commerce businesses. Recently it has encountered more competition from other online providers and needed a redesign that would help reflect and keep its dominate position in the market. This is the webapp portion of the redesign.  
+                  </p>
+                  <p>My role was as designer and UI developer. I designed the changes, then implemented them. Check out the live site design <a href="https://clippingmagic.com" target="_blank">here</a> and upload an image to view the webapp. </p>  
                 </div>
               </div>
             
@@ -95,7 +97,8 @@ export default class Work extends Component {
               <div className="col-md-10 offset-lg-1">
                 <div className="row some__margin">
                   <div className="col-md-7">
-                    <p>We took a very pragmatic view on how we would support mobile. A tiny amount of our users used the tool on a mobile device. Since we are a very small team, our resources would be best focused primarily on the desktop version. This made business sense. But we still wanted to support mobile, so we went for a desktop first approach. Everything that could be done on the desktop version could be done on mobile, but we didn’t spend the time to truly optimize the experience for mobile. </p>
+                    <p>We took a very pragmatic view on how we would support mobile. Only a tiny amount of our users used the tool on a mobile device. Since we wera a very small business, our resources would be best focused primarily on the desktop version. This made business sense for us. But we still wanted to support mobile, so we went for a desktop first approach. Everything that could be done on the desktop version could be done on mobile, but we didn’t spend the time to truly optimize the experience for mobile. </p>
+                    <p>For the mobile design, I took advantage of the horizontal scrolling paradigm. This allowed me to reuse the desktop elements for mobile without having to worry about doing any other major restyling or reformatting.</p>
                   </div>
                 </div>
               </div>

@@ -49,6 +49,7 @@ export default class Delta extends Component {
             <div className="row">
                 <div className="col-md-6 offset-lg-1">
                     <h2>Multi-Card Landing Page</h2>
+                    <p>The Multi-Card Landing Page was created to showcase each of Delta’s SkyMiles Credit Cards, with the intent of upselling customers on a card with even more benefits. Since the comparison of cards was such an important element, we had to create a paradigm that allowed users to compare each card even on smaller sized mobile screens. We ultimately settled on a slide through sticky navigation that would toggle through each comparison option.</p>
                 </div>
               </div>
               <div className="row some__margin">
