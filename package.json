@@ -22,6 +22,7 @@
     "body-parser": "^1.16.1",
     "bootstrap": "^4.3.1",
     "colladaloader2asmodule": "^1.0.5",
+    "copy-webpack-plugin": "^4.6.0",
     "css-loader": "^2.1.1",
     "es6-tween": "^5.4.1",
     "express": "^4.14.1",
