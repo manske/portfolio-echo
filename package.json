@@ -50,7 +50,10 @@
     "webpack-dev-middleware": "^1.10.0",
     "webpack-dev-server": "^2.11.5",
     "webpack-hot-middleware": "^2.16.1",
-    "whs": "^2.1.9"
+    "whs": "^2.1.9",
+    "file-loader": "^2.0.0",
+    "html-loader": "^0.5.5",
+    "url-loader": "^1.1.2"
   },
   "devDependencies": {
   
