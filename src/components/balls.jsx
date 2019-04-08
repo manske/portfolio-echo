@@ -4,7 +4,7 @@ import Ammo from 'ammo.js';
 //import createjs from 'tweenjs';
 import './scripts/collabaloader.js';
 //import './scripts/tweenjs.js';
-let _scene = './public/models/site_echo-alt-alt.dae';
+let _scene = 'https://s3.us-east-2.amazonaws.com/port-echo-manske/site_echo-alt-alt.dae';
 
 
  
