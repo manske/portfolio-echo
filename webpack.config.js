@@ -1,7 +1,7 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 var webpack = require('webpack');
-
+ 
 module.exports = {
   context: __dirname,
   entry: "./src/index.jsx",
@@ -10,7 +10,9 @@ module.exports = {
     filename: "bundle.js",
     publicPath: '/public/'
   },
-  node: { fs: 'empty' }, 
+  node: { 
+    fs: 'empty',
+    process: true }, 
   module: {
     loaders: [
       {
@@ -24,7 +26,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract('css-loader!sass-loader')
+        loader: 'style-loader!css-loader!sass-loader?sourceMap'
       },
       {
         test: /\.css$/,  
@@ -32,19 +34,45 @@ module.exports = {
         loaders: ['style-loader', 'css-loader'],
       },
       {
-          test: /\.(jpg|png|gif|svg|pdf|ico)$/,
-          use: [
-              {
-                  loader: 'file-loader',
-                  options: {
-                      name: '[path][name]-[hash:8].[ext]'
-                  },
-              },
-          ]
+        test: /\.mp4/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 10000,
+            mimtetype: 'video/mp4',
+          }
+        }
       },
       {
-        test: /\.(dae)$/,
+        test: /\.html$/,
+        use: 'html-loader?attrs[]=video:src'
+      },
+      {
+        test: /\.(jpg|png|svg)$/, 
         loader: 'url-loader',
+        options: {
+          limit: 25000,
+        },
+      },
+      {
+        test: /\.(jpg|png|svg)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[path][name].[hash].[ext]',
+        }
+      },
+      {
+        test: /\.dae$/,
+        loader: 'file-loader',
+        options: {
+           name (file) {
+            if (env === 'development') {
+              return '[path][name].[ext]'
+            }
+
+            return '[hash].[ext]'
+          }
+        }
       }
     ]
   },
@@ -56,7 +84,10 @@ module.exports = {
     new CopyWebpackPlugin([
            {from:'src/assets/images',to:'images'},
            {from:'src/assets/models',to:'models'} 
-        ])
+        ]), 
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('development')
+    })
   ],
 
   devServer: {

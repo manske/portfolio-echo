@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --hot --inline",
-    "start": "node server.js"
+    "start": "./node_modules/webpack/bin/webpack.js -p --progress && node server.js"
   },
   "main": "server.js",
   "engines": {
@@ -37,6 +37,7 @@
     "react-move": "^2.9.1",
     "react-router-dom": "^4.3.1",
     "sass-loader": "^5.0.1",
+    "serve": "^11.0.0",
     "simplify-js": "^1.2.3",
     "style-loader": "^0.13.1",
     "svg-inline-loader": "^0.8.0",
