@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import * as THREE from 'three';
-import Ammo from 'ammo.js';
+import Ammo from 'ammo.js'; 
 //import createjs from 'tweenjs';
 import './scripts/collabaloader.js';
 //import './scripts/tweenjs.js';

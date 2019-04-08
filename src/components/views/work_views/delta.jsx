@@ -70,7 +70,7 @@ export default class Delta extends Component {
                 </div>
                 <div className="row some__margin">
                   <div className="col-md-12">
-                    <Video mp4="/public/images/delta/facebook-canvas.mp4" webm="/public/images/delta/facebook-canvas.webm"></Video>
+                    <Video name="facebook-canvas"></Video>
 
                   </div>
                 </div>
@@ -85,7 +85,7 @@ export default class Delta extends Component {
                 </div>
                 <div className="row some__margin">
                   <div className="col-md-10">
-                    <Video  mp4="/public/images/delta/sky-club-airplane-animation.mp4" webm="/public/images/delta/sky-club-airplane-animation.webm"></Video>
+                    <Video  name="sky-club-airplane-animation"></Video>
 
                   </div>
                 </div>
@@ -96,7 +96,7 @@ export default class Delta extends Component {
                 </div>
                 <div className="row some__margin">
                   <div className="col-md-10 offset-lg-1">
-                    <Video  mp4="/public/images/delta/delta-facebook-carousel-animation.mp4" webm="/public/images/delta/delta-facebook-carousel-animation.webm"></Video>
+                    <Video  name="delta-facebook-carousel-animation"></Video>
                   </div>
                 </div>
             </Chunky>

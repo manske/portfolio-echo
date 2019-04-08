@@ -102,7 +102,7 @@ export default class Work extends Component {
             </div>
             <div className="row some__margin">
               <div className="col-md-12 col-lg-10 offset-lg-1">
-                <Video mp4="/public/images/clipping-magic-app/mobile-ui-example.mp4" webm="/public/images/clipping-magic-app/mobile-ui-example.webm"></Video>
+                <Video name="mobile-ui-example"></Video>
               </div>
             </div>
           </Chunky> 
@@ -137,7 +137,7 @@ export default class Work extends Component {
               </div>
               <div className="row">
                 <div className="col-md-12">
-                  <Video mp4="/public/images/clipping-magic-app/saver.mp4" webm="/public/images/clipping-magic-app/saver.webm"></Video>
+                  <Video name="saver"></Video>
                 </div>
               </div>
           </Chunky> 

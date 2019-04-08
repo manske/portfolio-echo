@@ -13,8 +13,8 @@ export class Video extends Component {
   render() {
     return (
       <video autoPlay="true" muted="true" loop="true" playsInline="true">
-          <source src={this.props.webm} type="video/webm" />
-          <source src={this.props.mp4} type="video/mp4" />
+          <source src={"https://s3.us-east-2.amazonaws.com/port-echo-manske/" + this.props.name + ".webm"} type="video/webm" />
+          <source src={"https://s3.us-east-2.amazonaws.com/port-echo-manske/" + this.props.name + ".mp4"} type="video/mp4" />
       </video>
     )
   }

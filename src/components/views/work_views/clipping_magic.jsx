@@ -219,7 +219,7 @@ export default class Work extends Component {
             </div>
             <div className="row some__margin">
               <div className="col-md-6">
-                <Video mp4="/public/images/clipping-magic/hero-video.mp4" webm="/public/images/clipping-magic/hero-video.webm"></Video>
+                <Video name="hero-video"></Video>
               </div>
               <div className="col-md-6 ">
                 <img src={Icons} alt=""/>

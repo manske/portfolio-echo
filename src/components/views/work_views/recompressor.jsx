@@ -40,25 +40,25 @@ export default class Recompressor extends Component {
               </div>
               <div className="row">
               <div className="col-lg-6 offset-lg-3 col-m-8 offset-lg-2">
-                <Video mp4="/public/images/recompressor/loader.mp4" webm="/public/images/recompressor/loader.webm"></Video>
+                <Video name="loader"></Video>
               </div>
             </div>
             <div className="row">
               <div className="col-lg-6 offset-lg-3 col-m-8 offset-lg-2">
-                <Video mp4="/public/images/recompressor/toggler.mp4" webm="/public/images/recompressor/toggler.webm"></Video>
+                <Video name="toggler"></Video>
 
               </div>
             </div> 
             <div className="row">
               <div className="col-lg-6 offset-lg-3 col-m-8 offset-lg-2">
-                <Video mp4="/public/images/recompressor/paster.mp4" webm="/public/images/recompressor/paster.webm"></Video>
+                <Video name="paster"></Video>
 
               </div>
             </div>
 
             <div className="row some__margin">
               <div className="col-md-10 offset-lg-1 col-m-12">
-                <Video mp4="/public/images/recompressor/drag-and-dropper.mp4" webm="/public/images/recompressor/drag-and-dropper.webm"></Video>
+                <Video name="drag-and-dropper"></Video>
               </div>
             </div>
             
