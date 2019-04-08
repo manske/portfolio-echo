@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import * as THREE from 'three';
-import Ammo from 'ammo.js'; 
+import * as Ammo from 'ammo.js'; 
 import './scripts/collabaloader.js';
 let _scene = '//s3.us-east-2.amazonaws.com/port-echo-manske/site_echo-alt-alt.dae';
 
