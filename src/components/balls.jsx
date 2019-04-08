@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import * as THREE from 'three';
-import Ammo from 'ammo.js'; 
-//import createjs from 'tweenjs';
+import {Ammo} from 'ammo.js'; 
 import './scripts/collabaloader.js';
-//import './scripts/tweenjs.js';
 let _scene = '//s3.us-east-2.amazonaws.com/port-echo-manske/site_echo-alt-alt.dae';
 
 
