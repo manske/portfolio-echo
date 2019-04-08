@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import * as THREE from 'three';
-import {Ammo} from 'ammo.js'; 
+import Ammo from 'ammo.js'; 
 import './scripts/collabaloader.js';
 let _scene = '//s3.us-east-2.amazonaws.com/port-echo-manske/site_echo-alt-alt.dae';
 
@@ -40,19 +40,19 @@ class ThreeScene extends Component{
 	        // Physics variables
 	      this.gravityConstant = 7.8;
 	      this.collisionConfiguration;
-	         this.dispatcher;
-	         this.broadphase;
-	         this.solver;
-	         this.physicsWorld;
-	         this.margin = 0.05;
+            this.dispatcher;
+            this.broadphase;
+            this.solver;
+            this.physicsWorld;
+            this.margin = 0.05;
 
-	         this.rigidBodies = [];
-	         this.softBodies = [];
+            this.rigidBodies = [];
+            this.softBodies = [];
 
-	         this.pos = new THREE.Vector3();
-	         this.quat = new THREE.Quaternion();
-	         this.transformAux1 = new Ammo.btTransform();
-	         this.tempBtVec3_1 = new Ammo.btVector3( 0, 0, 0 );
+            this.pos = new THREE.Vector3();
+            this.quat = new THREE.Quaternion();
+            this.transformAux1 = new Ammo.btTransform();
+            this.tempBtVec3_1 = new Ammo.btVector3( 0, 0, 0 );
 
 	      this.particleCount = 30;
 	      this.particles = [];
