@@ -36,10 +36,10 @@ export class Navbar extends Component {
         <div>
           <ul className="nav__links">
             <li>
-              <NavLink activeClassName='active' className="smalls nav__link" to="/work">Work</NavLink>
+              <NavLink  className="smalls nav__link" to="/">Work</NavLink>
             </li>
             <li>
-              <NavLink activeClassName='active' className="smalls nav__link" to="/about">About</NavLink>
+              <NavLink  className="smalls nav__link" to="/about">About</NavLink>
             </li>
           </ul>
         </div>

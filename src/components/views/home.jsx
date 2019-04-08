@@ -15,10 +15,10 @@ export default class Home extends Component {
     return (
       <MainTemplate name="home">
 
-          <div id="hero">
+          {/*<div id="hero">
             <div className="hero__home__backdrop"></div>
             <Balls />
-          </div>
+          </div>*/}
 
           <p>
           </p>

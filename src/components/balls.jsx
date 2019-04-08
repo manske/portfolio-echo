@@ -7,7 +7,7 @@ let _scene = '//s3.us-east-2.amazonaws.com/port-echo-manske/site_echo-alt-alt.da
 
  
 
-class ThreeScene extends Component{
+class Balls extends Component{
 
   	componentDidMount(){
 
@@ -619,4 +619,4 @@ class ThreeScene extends Component{
 	 }
 }
 
-export default ThreeScene
+export default Balls

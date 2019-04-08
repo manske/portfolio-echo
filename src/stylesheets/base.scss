@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lora|Roboto" rel="stylesheet');
+
 @import '~bootstrap/scss/bootstrap.scss';
 
 $var: #FFFFFF;
@@ -311,9 +311,7 @@ IMG, VIDEO {
 
 .nav__link {
   margin: 10px; 
-  &.active {
-    color: $varDarkHover;
-  }
+  
 }
 
 

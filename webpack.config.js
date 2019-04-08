@@ -94,7 +94,8 @@ module.exports = {
     new ExtractTextPlugin({ filename: 'app.css', allChunks: true }),
     new CopyWebpackPlugin([
            {from:'src/assets/images',to:'images'},
-           {from:'src/assets/models',to:'models'} 
+           {from:'src/assets/models',to:'models'},
+           { from: './favicon.png' }
         ]), 
    
   ],
