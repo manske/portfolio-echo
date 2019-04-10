@@ -1,0 +1,390 @@
+
+@import '~bootstrap/scss/bootstrap.scss';
+
+$var: #FFFFFF;
+$varDark: #adadad;
+$varDarkHover: #00d2a0;
+
+$_a_light_grey: #f9f8f8;
+
+html {
+  
+}
+
+body {
+  background: $var;
+  min-width: 100vw;
+  margin: 0;
+  padding: 0;
+  //font-family: 'Lora', serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+
+//=======================================================
+// Typography 
+//=======================================================
+
+$lightFont: #9e9e9e;
+$darkFont: #404041;
+
+$darkFontHover: #656566;
+
+a {
+  font-weight: 400;
+  transition: color 0.25s ease;
+  &, &:visited, &:hover {
+    color: $lightFont;
+    text-decoration: none;
+  }
+  &:hover {
+    color: $varDarkHover;
+  }
+}
+
+p {
+  a {
+    &, &:visited, &:hover {
+      color: $varDarkHover;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+$duration: .2s;
+$distance: 8px;
+$easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+
+p, li {
+  font-weight: 400;
+  color: $lightFont;
+  line-height: 2;
+}
+
+li {
+  line-height: 1.3;
+}
+
+.smalls {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.tinys {
+  letter-spacing: 0.1em;
+  font-size: 9px;
+  color: $varDark;
+}
+
+.larges {
+  font-size: 2.2rem;
+  line-height: 1.3;
+  color: $darkFont;
+  font-family: 'Lora', serif;
+}
+
+.mediums {
+  font-size: 1.4rem;;
+  line-height: 1.6; 
+  color: $darkFont;
+  font-family: 'Lora', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  transition: color 0.25s ease;
+  font-family: 'Lora', serif;
+  color: $darkFont;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  transition: color 0.25s ease;
+  color: $darkFont;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+
+.sub__label {
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+
+.tick {
+  border: 0;
+  height: 1px;
+  background-color: #ccc;
+  width: 20px;
+  margin-left: 0;
+}
+
+//=======================================================
+// Components 
+//=======================================================
+
+IMG, VIDEO {
+  width: 100%;
+}
+
+.hero__sec { 
+  position: relative;
+  padding-top: 1px;
+  margin-top: -1px;  
+  h1 {
+    margin-bottom: 1px;
+  }
+}
+
+.hero__back {
+  position: absolute;
+  height: calc(100% - 150px);
+  width: 100vw;
+  z-index: -99;
+  background: $_a_light_grey;
+  top: 68px;
+}
+
+.container_bg {
+  padding-top: 1px;
+  margin-top: -1px;
+  background: $_a_light_grey;
+  width: 100vw;
+}
+
+.bg_darker {
+  background: #e5e4e5;
+}
+
+.bg__xtra__darker {
+  background: #1a1a1a;
+}
+
+.chunky__block {
+  padding-top: 110px;
+  padding-bottom: 90px;
+}
+
+.chunky__hero {
+  margin-top: 160px;
+  margin-bottom: 70px;
+}
+
+.some__margin {
+  & > div {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+.list__funnel {
+  margin-top: 30px;
+  max-width: 400px;
+  li {
+    margin-bottom: 15px;
+    &:not(:last-child) {
+      &::after {
+        margin-top: 15px;
+        margin-left: 45px;
+        content: "↓";
+        text-align: center;
+        display: block;
+        width: 20px;
+        color: #0055ff;
+      }
+    }
+  }
+  
+}
+
+.work__showcase {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.work__card {
+  width: 100%;
+  padding-bottom: 100px;
+  .work__image__container {
+    width: 100%;
+    padding-top: 140%;
+    position: relative;
+  }
+  .work__image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      transition: all 0.5s ease;
+      & > div {
+          transition: all 0.5s ease;
+          width: 100%;
+          height: 100%;
+          background-position: center;
+          background-size: cover;
+          
+      }     
+  }
+
+  & a:hover {
+      .work__image {
+          transform: scale(.95);
+          & > div {
+              transform: scale(1.1);
+          }
+      }
+      
+  }
+  .work__label {
+      margin-top: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      transition: all 0.5s ease;
+      h3 {
+          font-size: 20px;
+          padding: 3px 0;
+          text-align: center;
+          display: inline-block;
+          margin-bottom: 6px;
+          position: relative;
+          font-family: "Roboto", sans-serif;
+      }
+      p {
+        display: inline-block;
+
+      }
+  }
+  a {
+      text-decoration: none !important;
+  }
+}
+
+
+//=======================================================
+// Work Pages 
+//=======================================================
+
+.hero__image {
+  width: 100%;
+}
+
+
+
+//=======================================================
+// Nav 
+//=======================================================
+
+.nav__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  z-index: 100;
+  nav {
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.nav__links {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__link {
+  margin: 10px; 
+  
+}
+
+
+
+.logo__name {
+  svg {
+    fill: $darkFontHover;
+    transition: all .25s ease;
+    height: 18px;
+  }
+  &:hover {
+    svg {
+      fill: $varDarkHover;
+    }
+  }
+}
+
+
+//=======================================================
+// Footer
+//=======================================================
+
+.footer__container {
+  margin-top: 100px;
+  height: 125px;
+  display: flex;
+  justify-content: space-between;
+  .logo__name {
+    svg {
+      fill: #e7e7e7;
+    }
+    &:hover {
+      svg {
+        fill: $varDarkHover;
+      }
+    }
+  }
+}
+
+.footer__outer__container {
+  padding-top: 40px;
+}
+
+
+
+//=======================================================
+// Media Queries
+//=======================================================
+
+@media (max-width: 992px) { 
+  html {
+    font-size: 14px;
+  }
+
+  .chunky__hero {
+    margin-bottom: 40px;
+  }
+
+  .some__margin {
+    margin-top: 20px;
+  }
+  
+ }
+
+
+
+
+@media (max-width: 768px) { 
+  .work__card {
+    .work__label {
+      h3 {
+        font-size: 16px;
+      }
+    }
+  }
+ }

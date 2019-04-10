@@ -1,0 +1,63 @@
+
+
+
+.persona__img {
+  height: 70px;
+  display: block;
+  width: auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.persona__p {
+  margin-top: 30px;
+}
+
+.wireframe { 
+  border: solid 2px black;
+  border-radius: 2px;
+
+}
+
+.wireframe__lighter {
+  border: solid 1px rgb(241, 241, 241);
+  border-radius: 2px;
+}
+
+.margin__collapse__150 {
+  margin-top: 150px; 
+}
+
+.margin__collapse__50 {
+  margin-top: 50px; 
+}
+
+.persona {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+
+
+@media (min-width: 992px) { 
+
+  .wireframe {
+    border: solid 1px black;
+  }
+
+  .persona__p {
+    margin-top: 100px; 
+  }
+ 
+ }
+
+@media (max-width: 720px) { 
+  .persona {
+    padding-right: 20px;
+    padding-left: 30px;
+  }
+
+  .margin__collapse {
+    margin-top: 0; 
+  }
+ }
