@@ -1,6 +1,7 @@
 
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 var webpack = require('webpack');
  
 module.exports = {
@@ -11,6 +12,7 @@ module.exports = {
     filename: "bundle.js",
     publicPath: '/public/'
   },
+ 
   node: { 
     global: true,
     crypto: 'empty',
@@ -40,25 +42,8 @@ module.exports = {
         loaders: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.mp4/,
-        use: {
-          loader: 'url-loader',
-          options: {
-            limit: 10000,
-            mimtetype: 'video/mp4',
-          }
-        }
-      },
-      {
         test: /\.html$/,
         use: 'html-loader?attrs[]=video:src'
-      },
-      {
-        test: /\.(jpg|png|svg)$/, 
-        loader: 'url-loader',
-        options: {
-          limit: 25000,
-        },
       },
       {
         test: /\.(jpg|png|svg)$/,
@@ -97,9 +82,10 @@ module.exports = {
            {from:'src/assets/models',to:'models'},
            { from: './favicon.png' }
         ]), 
-   
+    new webpack.optimize.UglifyJsPlugin({
+      compress: { warnings: false }
+    })
   ],
-
   devServer: {
     historyApiFallback: true,
     contentBase: './'
