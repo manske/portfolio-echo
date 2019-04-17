@@ -54,7 +54,7 @@ export default class Nuvectra extends Component {
               </div>
               <div className="row">
                 <div className="col-md-12">
-                  <img src={SiteComponents} alt=""/>
+                  <img src={SiteComponents} alt="Nuvectra site components"/>
                 </div>
               </div>
             </div>
@@ -68,10 +68,10 @@ export default class Nuvectra extends Component {
               </div>
               <div className="row some__margin">
                 <div className="col-md-7">
-                  <img className="wireframe__lighter" src={FullSite} alt=""/>
+                  <img className="wireframe__lighter" src={FullSite} alt="Nuvectra site full mockup desktop"/>
                 </div>
                 <div className="col-md-5">
-                  <img  src={Mobile} alt=""/>
+                  <img  src={Mobile} alt="Nuvectra site full mockup mobile"/>
                 </div>
               </div>
           </Chunky> 

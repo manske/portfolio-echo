@@ -71,7 +71,7 @@ export default class Work extends Component {
                 <div className="row">
                   <div className="col-lg-4 col-md-7">
                     <div className="persona">
-                      <img className="persona__img" src={Brenda} alt=""/>
+                      <img className="persona__img" src={Brenda} alt="Brenda Icon"/>
                       <p className="h4">Brenda</p>
                       <p>She has a small business out of her home selling artisan and vintage products. </p>
                       <p>She’s been expanding and wants to make more professional looking product photos She finds learning new software intimidating and wants a quick, easy, and, since many of her products are one-offs, inexpensive way to edit her photos.</p>
@@ -79,7 +79,7 @@ export default class Work extends Component {
                   </div>
                   <div className="col-lg-4 col-md-7">
                     <div className="persona">
-                      <img className="persona__img"  src={Kathy} alt=""/>
+                      <img className="persona__img"  src={Kathy} alt="Kathy Icon"/>
                       <p className="h4">Kathy </p>
                       <p>Is a designer/photographer and needs to produce product images for her company as quickly as possible. </p>
                       <p>Is proficient at using Photoshop, and can always produce a great result but wishes she could speed up the time it takes. </p>
@@ -87,7 +87,7 @@ export default class Work extends Component {
                   </div>
                   <div className="col-lg-4 col-md-7">
                     <div className="persona">
-                      <img className="persona__img" src={Jerry} alt=""/>
+                      <img className="persona__img" src={Jerry} alt="Jerry Icon"/>
                       <p className="h4">Jerry </p>
                       <p>Owns and manages an e-commerce business with a high volume of products. </p>
                       <p>Background is primarily on the business side of things and wants his images to be produced fast and look consistent. Has tried outsourcing his image editing and wasn’t happy with the speed or consistency.  </p>
@@ -140,7 +140,7 @@ export default class Work extends Component {
                 <p>Since there are a multitude of tools to choose from from a Google search, I wanted to make sure users understood how our tool worked so they would quickly see how easy and well it work compared to the others and not get turned away from unnecessary frustration.  </p>
               </div>
               <div className="col-md-5 col-lg-4 offset-lg-1">
-                <img src={OldClipper} alt=""/>
+                <img src={OldClipper} alt="Old design of clipping magic"/>
                 <p className="smalls" >Original Design</p>
               </div>
             </div>
@@ -161,11 +161,11 @@ export default class Work extends Component {
               <div className="row some__margin">
                 <div className="col-md-8">
                   <p className="smalls">Desktop</p>
-                  <img className="wireframe" src={WireDesktop} alt=""/>
+                  <img className="wireframe" src={WireDesktop} alt="clipping magic wireframe desktop"/>
                 </div>
                 <div className="col-md-4">
                   <p className="smalls">Mobile</p>
-                  <img className="wireframe" src={WireMobile} alt=""/>
+                  <img className="wireframe" src={WireMobile} alt="clipping magic wireframe mobile"/>
                 </div>
                 
               </div>
@@ -183,11 +183,11 @@ export default class Work extends Component {
               <div className="row some__margin">
                 <div className="col-md-8">
                   <p className="smalls">Desktop, Japanese Version</p>
-                  <img className="wireframe" src={WireDesktopJp} alt=""/>
+                  <img className="wireframe" src={WireDesktopJp} alt="clipping magic wireframe desktop Japanese version"/>
                 </div>
                 <div className="col-md-4">
                   <p className="smalls">Mobile, Japanese Version</p>
-                  <img className="wireframe" src={WireMobileJp} alt=""/>
+                  <img className="wireframe" src={WireMobileJp} alt="clipping magic wireframe mobile Japanese version"/>
                 </div>
               </div>
              
@@ -205,10 +205,10 @@ export default class Work extends Component {
             </div>
             <div className="row some__margin">
               <div className="col-md-7">
-                <img src={Buttons} alt=""/>
+                <img src={Buttons} alt="Site buttons"/>
               </div>
               <div className="col-md-4">
-                <img src={Colors} alt=""/>
+                <img src={Colors} alt="Site colors"/>
               </div>
             </div>
           </Chunky>
@@ -224,7 +224,7 @@ export default class Work extends Component {
                 <Video name="hero-video"></Video>
               </div>
               <div className="col-md-6 ">
-                <img src={Icons} alt=""/>
+                <img src={Icons} alt="Site Icons"/>
               </div>
             </div>
           </Chunky>
@@ -247,16 +247,16 @@ export default class Work extends Component {
 
               <div className="row some__margin">
                 <div className="col-md-6">
-                  <img className="wireframe__lighter" src={FullSite} alt=""/>
+                  <img className="wireframe__lighter" src={FullSite} alt="Full mockup of desktop Clipping Magic site"/>
                 </div>
                 <div className="col-md-6">
-                  <img src={Mobile} alt=""/> 
+                  <img src={Mobile} alt="Full mockup of mobile Clipping Magic site"/> 
                 
                 </div>
               </div>
               <div className="row some__margin">
                 <div className="col-md-12">
-                  <img src={SamplePages} alt=""/>
+                  <img src={SamplePages} alt="Sample pages of Clipping Magic"/>
                 </div>
               </div>
             </Chunky>

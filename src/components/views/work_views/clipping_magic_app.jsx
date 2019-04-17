@@ -11,6 +11,8 @@ import DesignMainMobile from "../../../assets/images/clipping-magic-app/cm-app-d
 import DesignSub from "../../../assets/images/clipping-magic-app/cm-app-design-sub-app.png";
 import DesignSubMobile from "../../../assets/images/clipping-magic-app/cm-app-design-sub-app-mobile.jpg";
 
+import DesignSystem from "../../../assets/images/clipping-magic-app/cm-app-design-system.png";
+
 import Onboarder from "../../../assets/images/clipping-magic-app/cm-onboarder-design.jpg";
 import OnboarderUserFlow from "../../../assets/images/clipping-magic-app/user-flow-org.svg";
 
@@ -65,12 +67,12 @@ export default class Work extends Component {
             </div>
             <div className="row some__margin">
               <div className="col-md-8">
-                <img className="wireframe__lighter" src={DesignMain} alt=""/>  
+                <img className="wireframe__lighter" src={DesignMain} alt="Clipping Magic App Desktop Mocked Up"/>  
               </div>
             </div>
             <div className="row some__margin">
               <div className="col-md-8 offset-md-4">
-                <img className="wireframe__lighter" src={DesignSub} alt=""/>  
+                <img className="wireframe__lighter" src={DesignSub} alt="Clipping Magic App Desktop Mocked Up"/>  
               </div>
             </div>
           </Chunky>
@@ -87,10 +89,10 @@ export default class Work extends Component {
             </div>
             <div className="row">
               <div className="col-md-6">
-                <img src={DesignSubMobile} alt=""/>  
+                <img src={DesignSubMobile} alt="Clipping Magic App Mobile Mocked Up"/>  
               </div>
               <div className="col-md-6">
-                <img src={DesignMainMobile} alt=""/>  
+                <img src={DesignMainMobile} alt="Clipping Magic App Mobile Mocked Up"/>  
               </div>
             </div>
             <div className="row">
@@ -110,6 +112,24 @@ export default class Work extends Component {
             </div>
           </Chunky> 
 
+          <Chunky>
+            <div className="row">
+                <div className="col-md-10 offset-lg-1">
+                  <div className="row">
+                    <div className="col-md-7">
+                      <h2>Design System</h2>
+                      <p>I created a design system for the app that would be flexible, compact, and work on a variety of screens. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div className="row">
+              <div className="col-md-12">
+                <img src={DesignSystem} alt="Design system components for Clipping Magic App"/>  
+              </div>
+            </div>
+          </Chunky>
+
           <Chunky> 
               <div className="row">
                 <div className="col-md-10 offset-lg-1">
@@ -123,10 +143,10 @@ export default class Work extends Component {
               </div>
               <div className="row some__margin">
                 <div className="col-md-10 offset-md-1">
-                    <img src={Iconography} alt=""/>
+                    <img src={Iconography} alt="Clipping Magic App Iconography"/>
                 </div>
                 <div className="col-md-10 offset-md-1">
-                    <img src={IconographyPixels} alt=""/>
+                    <img src={IconographyPixels} alt="Clipping Magic App Iconography on pixel grid"/>
                 </div>
               </div>
               <div className="row some__margin margin__collapse__50">
@@ -159,12 +179,12 @@ export default class Work extends Component {
             </div>
             <div className="row some__margin">
               <div className="col-md-10 offset-md-1">
-                <img className="wireframe__lighter" src={Onboarder} alt=""/>  
+                <img className="wireframe__lighter" src={Onboarder} alt="App onboarder screenshot"/>  
               </div>
             </div>
             <div className="row some__margin">
               <div className="col-md-12">
-                <img  src={OnboarderUserFlow} alt=""/>  
+                <img  src={OnboarderUserFlow} alt="User flow for app onboarder"/>  
               </div>
             </div>
           </Chunky> 

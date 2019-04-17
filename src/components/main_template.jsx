@@ -88,7 +88,7 @@ export class Hero extends Component {
         </div>
         {this.props.hero_image != null &&
           <div className="container hero__image">
-            <img src={this.props.hero_image} alt="large graphic"/>
+            <img src={this.props.hero_image} alt="hero graphic"/>
           </div>
         }
         {this.props.hero_image != null &&

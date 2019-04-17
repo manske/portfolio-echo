@@ -74,10 +74,10 @@ export default class Recompressor extends Component {
               </div>
               <div className="row some__margin">
                 <div className="col-md-7">
-                  <img className="wireframe__lighter" src={FullSite} alt=""/>
+                  <img className="wireframe__lighter" src={FullSite} alt="Full mockup of Recompressor.com desktop"/>
                 </div>
                 <div className="col-md-5">
-                  <img  src={Mobile} alt=""/>
+                  <img  src={Mobile} alt="Full mockup of Recompressor.com mobile"/>
                 </div>
               </div>
           </Chunky>

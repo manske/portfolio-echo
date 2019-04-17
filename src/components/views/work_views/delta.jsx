@@ -54,10 +54,10 @@ export default class Delta extends Component {
               </div>
               <div className="row some__margin">
                 <div className="col-md-7">
-                  <img className="wireframe__lighter" src={MclpFullSite} alt=""/>
+                  <img className="wireframe__lighter" src={MclpFullSite} alt="Mockup of desktop site"/>
                 </div>
                 <div className="col-md-5">
-                  <img  src={MclpMobile} alt=""/>
+                  <img  src={MclpMobile} alt="Mockup of mobile site"/>
                 </div>
               </div>
           </Chunky>
@@ -92,7 +92,7 @@ export default class Delta extends Component {
                 </div>
                 <div className="row some__margin">
                   <div className="col-md-6 offset-md-6">
-                    <img src={AirportMock} alt=""/>
+                    <img src={AirportMock} alt="Airport mockup of Delta animation"/>
                   </div>
                 </div>
                 <div className="row some__margin">

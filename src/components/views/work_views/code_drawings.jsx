@@ -34,12 +34,12 @@ export default class CodeDrawings extends Component {
                   <p>A small poster series that tries to bridge the gap between coding and design. Each poster image was drawn by the code below it using the Processing graphical library. </p>
                 </div>
               </div>
-              <img className="some__margin" src={Organic} alt=""/>
+              <img className="some__margin" src={Organic} alt="Large image of code drawing poster"/>
           </Chunky>
 
           <div className="bg__xtra__darker container_bg">
             <Chunky>
-              <img src={AllPosters} alt=""/>
+              <img src={AllPosters} alt="All code drawing posters"/>
             </Chunky>
           </div>
 
